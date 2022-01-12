@@ -33,17 +33,17 @@ window.onload = function() {
 	let caInnerHTML = "";
 	for(let i = 0; i < portfolioList.length; i++) {
 		if(i==0) {
-            indicatorHTML +='<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="'+i+'" class="active" aria-current="true" aria-label="Slide 1"></button>'
+            indicatorHTML +='<button type="button" data-bs-target="#outputSlideCaptions" data-bs-slide-to="'+i+'" class="active" aria-current="true" aria-label="Slide 1"></button>'
             caInnerHTML += '<div class="carousel-item active"><img src="resource/'+portfolioList[i]+'" class="d-block w-100" alt="포트폴리오 사진"></div>'
 		} else {
-            indicatorHTML += '<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="'+i+'" aria-label="Slide '+(i+1)+'"></button>'
+            indicatorHTML += '<button type="button" data-bs-target="#outputSlideCaptions" data-bs-slide-to="'+i+'" aria-label="Slide '+(i+1)+'"></button>'
             
 
 		caInnerHTML += '<div class="carousel-item"><img src="resource/'+portfolioList[i]+'" class="d-block w-100" alt="포트폴리오 사진"></div>'
 		}
 		
-		document.querySelector("div.carousel-indicators").innerHTML =  indicatorHTML
-		document.querySelector("div.carousel-inner").innerHTML = caInnerHTML
+		document.querySelector('.carousel-indicators').innerHTML =  indicatorHTML
+		document.querySelector('.carousel-inner').innerHTML = caInnerHTML
 	}
 
 }
