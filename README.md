@@ -3,6 +3,10 @@
 ## ☝ Description
 애플파이 홈페이지입니다. 현재 제작중입니다
 
+## 접속방법
+현재 Firebase Hosting에서 임시로 작업중입니다.<br>
+접속 링크는 [App:ple Pi Web](https://applepie-web.web.app/) 입니다.
+
 ## 사용방법
 ### 페이스북 및 깃허브 링크 수정
 1. resource/data.json 에서 키`facebook` 와 `github`를 수정해주시면 됩니다.
