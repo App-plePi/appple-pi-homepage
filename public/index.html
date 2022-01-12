@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="kr">
-
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -13,14 +12,14 @@
     <title>App:ple Pi</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
     <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
@@ -34,7 +33,7 @@
     <link rel="stylesheet" href="css/fullpage.min.css">
 
     <!-- 커스텀 -->
-    <script src="js/index.js"></script>
+    <script src="js/index.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/accordion.css">
     <!-- 포폴 아코디언 -->
@@ -64,7 +63,7 @@
                             </a>
                             <div style="text-align: center; margin-top: 16px;">
 
-                                <button class="btn btn-lg btn-warning" id="applicationBtn"onclick="goApplyForm()"></button>
+                                <button class="btn btn-lg btn-warning" id="applicationBtn" onclick="goApplyForm()"></button>
 
                             </div>
                         </main>
@@ -102,10 +101,9 @@
                                     <h2 class="featurette-heading">C언어</h2>
                                     <p>프로그래밍의 기초를 잡기위해 집중적으로 C언어를 배우게 됩니다.</p>
                                     <p>
-                                        <a class="badge badge-primary" style="color: white;">배열</a>
-                                        <a class="badge badge-primary" style="color: white;">포인터</a>
-                                        <a class="badge badge-primary" style="color: white;">함수</a>
-                                        <a class="badge badge-primary" style="color: white;">구조체</a>
+                                        <span class="badge rounded-pill bg-primary">포인터</span>
+                                        <span class="badge rounded-pill bg-primary">함수</span>
+                                        <span class="badge rounded-pill bg-primary">구조체</span>
                                     </p>
                                 </div>
                                 <div class="col-md-5 d-none d-md-block d-print-block">
@@ -120,10 +118,10 @@
                                     <h2 class="featurette-heading">Java &amp; Kotlin</h2>
                                     <p>앱 개발을 하기 전, 사용하게 될 언어에 적응합니다.</p>
                                     <p>
-                                        <a class="badge badge-warning">메소드와 클래스</a>
-                                        <a class="badge badge-warning">상속과 인터페이스</a>
-                                        <a class="badge badge-warning">반복문 심화</a>
-                                        <a class="badge badge-warning">쓰레드</a>
+                                        <span class="badge rounded-pill bg-warning text-dark">메소드와 클래스</span>
+                                        <span class="badge rounded-pill bg-warning text-dark">상속과 인터페이스</span>
+                                        <span class="badge rounded-pill bg-warning text-dark">반복문 심화</span>
+                                        <span class="badge rounded-pill bg-warning text-dark">쓰레드</span>
                                     </p>
                                 </div>
                                 <div class="col-md-5 order-md-1 d-none d-md-block d-print-block">
@@ -138,13 +136,13 @@
                                     <h2 class="featurette-heading">Android Studio</h2>
                                     <p>본격적으로 앱 개발을 시작합니다.</p>
                                     <p>
-                                        <a class="badge badge-success" style="color: white;">XML</a>
-                                        <a class="badge badge-success" style="color: white;">레이아웃</a>
-                                        <a class="badge badge-success" style="color: white;">XML과 Java</a>
-                                        <a class="badge badge-success" style="color: white;">Fragment</a>
-                                        <a class="badge badge-success" style="color: white;">ViewPager</a>
-                                        <a class="badge badge-success" style="color: white;">Firebase</a>
-                                        <a class="badge badge-success" style="color: white;">외부 API</a>
+                                        <span class="badge rounded-pill bg-success">XML</span>
+                                        <span class="badge rounded-pill bg-success">레이아웃</span>
+                                        <span class="badge rounded-pill bg-success">XML과 Java</span>
+                                        <span class="badge rounded-pill bg-success">Fragment</span>
+                                        <span class="badge rounded-pill bg-success">ViewPager</span>
+                                        <span class="badge rounded-pill rounded-pill bg-success">Firebase</span>
+                                        <span class="badge rounded-pill bg-success">외부 API</span>
                                     </p>
                                 </div>
                                 <div class="col-md-5 d-none d-md-block d-print-block">
@@ -169,7 +167,7 @@
                                     <h2 class="featurette-heading">Adobe Xd</h2>
                                     <p>앱 디자인 전용 툴을 다뤄봅니다.</p>
                                     <p>
-                                        <a class="badge badge-pill badge-dark" style="color: white;">Adobe Xd</a>
+                                        <span class="badge rounded-pill bg-dark">Adobe Xd</span>
                                     </p>
                                 </div>
                                 <div class="col-md-5 d-none d-md-block d-print-block">
@@ -185,8 +183,8 @@
                                     <h2 class="featurette-heading text-wrap">Adobe Photoshop &amp; illustrator</h2>
                                     <p>목업, 판넬 제작 등 다양한 작업을 수행합니다.</p>
                                     <p>
-                                        <a class="badge badge-pill badge-primary" style="color: white;">Adobe Photoshop</a>
-                                        <a class="badge badge-pill badge-warning">Adobe illustrator</a>
+                                        <span class="badge rounded-pill bg-primary">Adobe Photoshop</span>
+                                        <span class="badge rounded-pill bg-warning text-dark">Adobe illustrator</span>
                                     </p>
                                 </div>
                                 <div class="col-md-5 order-md-1 d-none d-md-block d-print-block">
@@ -201,7 +199,7 @@
                                     <h2 class="featurette-heading">Zeplin</h2>
                                     <p>개발자 친구들과 디자이너 친구들이 함께 작업할 때 사용합니다.</p>
                                     <p>
-                                        <a class="badge badge-pill badge-warning">Zeplin</a>
+                                        <span class="badge rounded-pill bg-warning text-dark">Zeplin</span>
                                     </p>
                                 </div>
                                 <div class="col-md-5 d-none d-md-block d-print-block">
@@ -223,7 +221,7 @@
                         <main role="main" class="overflow-auto inner cover aaaa accordion vertical">
 
                             <ul class="award-box">
-                                
+
 
 
                             </ul>
@@ -238,26 +236,25 @@
         <div class="section" id="section4">
             <div class="output">
 
-                <div id="outputSlideCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+                <div id="outputSlideCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
                         
-                    </ol>
+                    </div>
                     <div class="carousel-inner">
 
 
                     </div>
-                    <a class="carousel-control-prev" href="#outputSlideCaptions" role="button" data-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#outputSlideCaptions" role="button" data-slide="next">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
             </div>
         </div>
     </div>
-</body>
-</html>
+</body></html>
