@@ -26,21 +26,23 @@ window.onload = function() {
 		
 	}
 	document.querySelector("ul.award-box").innerHTML=finalAwardsHTML
+    
 	//동아리 포폴 업데이트
 	const portfolioList = dataJSON.portfolio
 	let indicatorHTML = "";
 	let caInnerHTML = "";
 	for(let i = 0; i < portfolioList.length; i++) {
 		if(i==0) {
-			indicatorHTML += '<li data-target="#outputSlideCaptions" data-slide-to="'+i.toString()+'" class="active"></li>'
-			caInnerHTML += '<div class="carousel-item active"><img src="resource/'+portfolioList[i]+'" class="d-block w-100" alt="..."><div class="carousel-caption d-none d-md-block"></div></div>'
+            indicatorHTML +='<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="'+i+'" class="active" aria-current="true" aria-label="Slide 1"></button>'
+            caInnerHTML += '<div class="carousel-item active"><img src="resource/'+portfolioList[i]+'" class="d-block w-100" alt="포트폴리오 사진"></div>'
 		} else {
-			indicatorHTML += '<li data-target="#outputSlideCaptions" data-slide-to="'+i.toString()+'"></li>'
+            indicatorHTML += '<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="'+i+'" aria-label="Slide '+(i+1)+'"></button>'
+            
 
-		caInnerHTML += '<div class="carousel-item"><img src="resource/'+portfolioList[i]+'" class="d-block w-100" alt="..."><div class="carousel-caption d-none d-md-block"></div></div>'
+		caInnerHTML += '<div class="carousel-item"><img src="resource/'+portfolioList[i]+'" class="d-block w-100" alt="포트폴리오 사진"></div>'
 		}
 		
-		document.querySelector("ol.carousel-indicators").innerHTML =  indicatorHTML
+		document.querySelector("div.carousel-indicators").innerHTML =  indicatorHTML
 		document.querySelector("div.carousel-inner").innerHTML = caInnerHTML
 	}
 
