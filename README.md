@@ -5,7 +5,8 @@
 
 ## 접속방법
 현재 Firebase Hosting에서 임시로 작업중입니다.<br>
-접속 링크는 [App:ple Pi Web](https://applepie-web.web.app/) 입니다.
+접속 링크는 [App:ple Pi Web](https://applepie-web.web.app/) 입니다.<
+추후 동아리 예산으로 도메인 구입 시 그 도메인으로 접속되게끔 할 예정입니다.
 
 ## 사용방법
 ### 페이스북 및 깃허브 링크 수정
